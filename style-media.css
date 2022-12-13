@@ -1,0 +1,30 @@
+@media screen and (max-width: 500px){
+
+    .main-text__h1{
+        font-size: 2rem;
+    }
+    .phone a{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1140px){
+    .main-img{
+        display:none;
+    }
+    .conteiner{
+        padding:  16px;
+    }
+}
