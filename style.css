@@ -94,7 +94,6 @@ header{
     right: -30%;
     top: 0;
     z-index: -50;
-    width: 50vw;
 }
 .pogoda-img{
     display: flex;
