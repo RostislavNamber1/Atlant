@@ -19,6 +19,12 @@
     .logo{
       width: 35%;
     }
+    .main-text__p::after{
+        right: -25%;
+        bottom: -30%;
+        width: 30px;
+        height: 40px;
+    }
 }
 
 
