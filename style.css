@@ -163,6 +163,9 @@ header{
 .main-text__button{
     margin-top: 25px;
     width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 .main-text__button>button{
     width: 25rem;
