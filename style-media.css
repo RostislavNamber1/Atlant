@@ -4,17 +4,20 @@
         font-size: 2rem;
     }
     .phone a, .phone p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .logo3{
       display: none;
     }
     .main-text__button>button{
-      width: 80%;
+      width: 100%;
     }
     .main-text__button{
       width: 100%;
+    }
+    .logo{
+      width: 35%;
     }
 }
 
