@@ -3,9 +3,10 @@
     .main-text__h1{
         font-size: 2rem;
     }
-    .phone a{
-        font-size: 1rem;
+    .phone a, .phone p{
+        font-size: 1.2rem;
     }
+
     logo3{
       display: none;
     }
