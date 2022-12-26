@@ -1,190 +1,185 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* резет команды */
 html {
   box-sizing: border-box;
-  /* плавный скрол */
-  scroll-behavior: smooth;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  letter-spacing: .5px;
   position: relative;
-  text-decoration: none;
-  font-family: 'Russo One', sans-serif;
-  color: #ffffff;
 }
-body{
-  width: 100%;
+
+body {
+  /* плавный скрол */
+  scroll-behavior: smooth;
+  /* скрытие горизонтального скрола */
   overflow-x: hidden;
-  background-color: #2D2D2D;
+  background: #2F343A;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FFFFFF;
 }
-a{
+
+a {
   text-decoration: none;
-  color: unset;
+  color: #FFFFFF;
 }
 
-img{
+.wrap {
+  max-width: 1108px;
+  margin: 0 auto;
+}
+@media (max-width: 1108px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
+.df {
+  display: flex;
+}
+
+/* Безопасные шрифты
+font-family: "Arial";
+font-family: "Times New Roman";
+font-family: "Courier New";
+font-family: "Courier";
+font-family: "Verdana";
+font-family: "Georgia";
+font-family: "Palatino";
+font-family: "Garamond";
+font-family: "Bookman";
+font-family: "Tahoma";
+font-family: "Trebuchet";
+font-family: "Arial Black";
+font-family: "Impact";
+font-family: "Comic Sans MS";
+ */
+h1 {
+  font-weight: 800;
+  font-size: calc(44px + 20 * (100vw - 320px) / 1108);
+}
+
+.df-row-space-between {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header-top {
+  width: 100vw;
+  padding: 16px 0;
+  background: #C8A35F;
+  min-height: 5vh;
+}
+
+.language, .phone, .email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.language a, .phone a, .email a {
+  color: #FFFFFF;
+}
+.language a:hover, .phone a:hover, .email a:hover {
+  text-decoration: underline;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.conteiner{
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-}
-/* шапка сайта */
-header{
-    width: 100%;
-    min-height: 10vh;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
+  padding: 27px 0;
+  min-height: 10vh;
 }
 
-.logo1 {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    gap: 21px;
-}
 .logo {
-    font-size: 3.5vw;
-    text-transform: uppercase;
-}
-.logo span{
-    font-size: 5vw;
-    color: #2194FF;
-}
-.logo3 {
-    margin-top: 10px;
-    font-style: italic;
-    padding: 0 21px;
-    border-left: 1px solid #fff;
-}
-.header2 {
-}
-.phone a{
-    color: #F1F1F1;
-    font-size: 1.5rem;
-}
-.phone p,
-.logo3{
-    font-weight: 400;
-    font-size: 1.5vw;
-    font-weight: 700;
-    font-family: "Open Sans";
-    color: #2194FF;
+  gap: 27px;
 }
 
-/* ***********конц шапки**************** */
-.main-text{
-    max-width: 530px;
-}
-.main-img{
-    position: absolute;
-    right: -30%;
-    top: 0;
-    z-index: -50;
-}
-.pogoda-img{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: .5rem;
-}
-.pogoda-img > i{
-    width: 1.25rem;
-    height: 1.25rem;
+.logo-office {
+  align-items: center;
+  padding: 0 27px;
+  border-left: 1px solid #F2F2F2;
 }
 
-.moon::before{
-    content: url(/img/moon.svg);
+nav {
+  min-height: 46px;
+  display: grid;
+  place-items: center;
 }
-.arrow::before{
-    content: url(/img/arrow.svg);
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-.sun::before{
-    content: url(/img/sun.svg);
+nav ul li {
+  list-style: none;
 }
-.cloud::before{
-    content: url(/img/cloud.svg);
+nav ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 1s;
+  font-size: 20px;
 }
-.snowflake::before{
-    content: url(/img/snowflake.svg);
-}
-.main-text__pogoda{
-    display: flex;
-    gap: 30px;
-}
-.pogoda-text{
-    font-size: 1rem;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    margin-top: .5rem;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-.main-text{
-    max-width: 550px;
-    display: flex;
-    flex-flow: column;
-    gap: 1rem;
+.main-blok {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/Rectangle 2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-.main-text__h1>h1{
-    font-size: 4rem;
-    color: #2194FF;
-    font-weight: 400;
+.main-blok-text {
+  text-align: center;
+  max-width: 777px;
 }
-.main-text__p{
-    width: 300px;
+.main-blok-text * + * {
+  margin-top: 45px;
 }
-.main-text__p::after{
-    content: url(/img/Vector.svg);
-    position: absolute;
-    right: -25%;
-    bottom: -30%;
-    width: 70px;
-    height: 80px;
-}
-.main-text__p>p{
-    font-weight: 400;
-    font-size: 24px;
-    color: #F1F1F1;
-}
-.main-text__button{
-    margin-top: 25px;
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-.main-text__button>button{
-    width: 25rem;
-    height: 5.625rem;
-    border-radius: 11px;
-    border: 10px solid linear-gradient(90deg, #2194FF 0%, #81C0FB 52.24%, #108CFF 100%);
-    background: linear-gradient(90deg, #2194FF 0%, #81C0FB 52.24%, #108CFF 100%);
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    color: #F1F1F1;
-    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
-}
-.main-text__button>p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #F1F1F1;
-    text-align: center;
 
+p {
+  font-size: 18px;
+  font-weight: 400;
 }
+
+.mause {
+  position: absolute;
+  bottom: 50px;
+  -webkit-animation: mause 3s infinite;
+          animation: mause 3s infinite;
+}
+
+@-webkit-keyframes mause {
+  50% {
+    bottom: 20px;
+    opacity: 0.3;
+  }
+}
+
+@keyframes mause {
+  50% {
+    bottom: 20px;
+    opacity: 0.3;
+  }
+}/*# sourceMappingURL=style.css.map */

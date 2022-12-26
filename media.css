@@ -1,0 +1,26 @@
+@media (max-width: 500px) {
+    nav {
+      display: none;
+    }
+    .logo {
+      gap: 10px;
+      align-items: center;
+    }
+    .logo-office {
+      padding: 0 10px;
+    }
+    header {
+      min-height: 0vh;
+      padding: 15px 0;
+    }
+  }
+  @media (max-width: 850px) {
+    .__media-df-center {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 320px) {
+    .logo-office__text {
+      font-size: 10px;
+    }
+  }/*# sourceMappingURL=media.css.map */
